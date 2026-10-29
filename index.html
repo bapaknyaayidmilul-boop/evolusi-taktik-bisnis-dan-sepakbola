@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolusi Taktik Sepak Bola & Tren Strategi Bisnis</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                        },
+                        cyan: {
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        },
+                        amber: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        crimson: {
+                            500: '#ef4444',
+                            600: '#dc2626',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 360px;
+            }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<!-- Palette: Vibrant Sport Analytics (Deep Navy #0f172a, Emerald #10b981, Cyan #06b6d4, Amber #f59e0b, Crimson #ef4444) | Plan: Narrative infographic extracting elite football tactics into corporate strategy | Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in this output. -->
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur text-white shadow-lg border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <span class="text-2xl">⚽</span>
+                    <span class="font-bold text-lg md:text-xl tracking-tight text-white">Taktik Bola & Strategi Bisnis</span>
+                </div>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#posisi" class="hover:text-cyan-400 transition-colors">Posisi & Kapasitas</a>
+                    <a href="#guardiola" class="hover:text-cyan-400 transition-colors">Pep & Sistem</a>
+                    <a href="#gegenpressing" class="hover:text-cyan-400 transition-colors">Gegenpressing Agile</a>
+                    <a href="#ferguson" class="hover:text-cyan-400 transition-colors">Sir Alex & Suksesi</a>
+                    <a href="#redbull" class="hover:text-cyan-400 transition-colors">Red Bull Pipeline</a>
+                </div>
+                <div>
+                    <a href="#dashboard" class="bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-900 font-bold px-4 py-2 rounded-lg text-xs md:text-sm hover:opacity-90 transition-opacity">
+                        Matriks Taktis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="bg-gradient-to-br from-navy-900 via-slate-900 to-navy-800 text-white py-12 md:py-20 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
+                    <span>📊 Executive Research Infographic</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white mb-6">
+                    Analisis Mendalam Evolusi Taktik Sepak Bola Terhadap Tren Strategi Bisnis
+                </h1>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-8">
+                    Bagaimana filosofi lapangan hijau—dari kontrol posisional Pep Guardiola, keagresifan *Gegenpressing*, suksesi dinasti Sir Alex Ferguson, hingga ekosistem data Red Bull—mentransformasi tata kelola korporat modern di era VUCA.
+                </p>
+            </div>
+
+            <!-- Top Metric Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                <div class="bg-slate-800/80 border border-slate-700/60 p-4 rounded-xl shadow-md">
+                    <div class="text-cyan-400 text-xs font-semibold uppercase tracking-wider">KPI Tanggap Darurat</div>
+                    <div class="text-2xl md:text-3xl font-extrabold text-white my-1">6 Detik</div>
+                    <div class="text-slate-400 text-xs">Transformasi SLA CS dari Rekor Recovery Bola</div>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700/60 p-4 rounded-xl shadow-md">
+                    <div class="text-emerald-400 text-xs font-semibold uppercase tracking-wider">Horizon Perencanaan</div>
+                    <div class="text-2xl md:text-3xl font-extrabold text-white my-1">4 Tahun</div>
+                    <div class="text-slate-400 text-xs">Proyeksi Siklus Daur Ulang Skuad & Produk</div>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700/60 p-4 rounded-xl shadow-md">
+                    <div class="text-amber-400 text-xs font-semibold uppercase tracking-wider">Ukuran Tim Agile</div>
+                    <div class="text-2xl md:text-3xl font-extrabold text-white my-1">~7 Orang</div>
+                    <div class="text-slate-400 text-xs">Unit Lintas Fungsi Otonom & Berkecepatan Tinggi</div>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700/60 p-4 rounded-xl shadow-md">
+                    <div class="text-crimson-400 text-xs font-semibold uppercase tracking-wider">Multi-Club Pipeline</div>
+                    <div class="text-2xl md:text-3xl font-extrabold text-white my-1">3x-5x</div>
+                    <div class="text-slate-400 text-xs">Multiplikasi Margin Valuasi Talenta Muda</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- Section 1: Strategic Positioning & Capacity Management -->
+        <section id="posisi" class="scroll-mt-20">
+            <div class="border-l-4 border-cyan-500 pl-4 mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">1. Posisi Strategis & Manajemen Kapasitas Operasional</h2>
+                <p class="text-slate-600 text-sm md:text-base mt-1">Sinergi Kerangka Kerja Porter, Rotasi Skuad, dan Efisiensi Rumah Sakit</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 mb-8">
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Michael Porter mendefinisikan strategi korporat sebagai penciptaan posisi unik melalui kompromi (*trade-offs*) dan kohesi antar-aktivitas (*fit among activities*). Dalam sepak bola elit, tim tidak bisa menguasai seluruh aspek permainan tanpa mengorbankan hal lain. Memilih gaya *Low Block* reaktif mengorbankan penguasaan bola demi ruang serangan balik. Hal serupa berlaku pada korporasi seperti Vanguard yang mengorbankan layanan tatap muka demi biaya terendah. Efisiensi posisi ini sangat bergantung pada pengelolaan kapasitas operasional yang terukur untuk mencegah kelelahan (*burnout*).
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <!-- Text & Insights -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-800 text-base mb-2 flex items-center space-x-2">
+                                <span>🏥</span>
+                                <span>Pelajaran Kapasitas Rumah Sakit</span>
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Penelitian penerimaan rumah sakit di New York membuktikan krisis kapasitas bukan disebabkan oleh pasien darurat acak, melainkan oleh penjadwalan operasi elektif yang menumpuk di awal minggu. Meratakan beban elektif menyerap krisis darurat secara mulus.
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-800 text-base mb-2 flex items-center space-x-2">
+                                <span>🏃</span>
+                                <span>Rotasi Skuad & Burnout Karyawan</span>
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Manajer sepak bola mengistirahatkan pemain kunci di laga berisiko rendah (*scheduled admissions*). Perusahaan harus meratakan proyek strategis agar staf memiliki kapasitas kognitif untuk menangani krisis pasar dadakan (*emergencies*).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Chart Container -->
+                    <div class="lg:col-span-7 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h3 class="text-sm font-bold text-slate-800 mb-2 text-center">Simulasi Beban Kapasitas: Tanpa Rotasi vs Rotasi Terencana</h3>
+                        <div class="chart-container">
+                            <canvas id="capacityChart"></canvas>
+                        </div>
+                        <p class="text-xs text-slate-500 text-center mt-2">
+                            Grafik menunjukkan bahwa pemerataan beban terencana mencegah lonjakan kapasitas kritis (&gt;90%) yang dapat memicu cedera atau burnout.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Alignment Table -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 overflow-x-auto">
+                <h3 class="font-bold text-slate-900 text-lg mb-4">Matriks Ekuivalensi Taktis Sepak Bola & Strategi Korporat</h3>
+                <table class="w-full text-left border-collapse text-xs md:text-sm">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                            <th class="p-3">Dimensi Manajerial</th>
+                            <th class="p-3">Implementasi Taktis Sepak Bola</th>
+                            <th class="p-3">Ekuivalensi Strategi Korporat</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-600">
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-800">Posisional Strategis</td>
+                            <td class="p-3">Penguasaan ruang & formasi adaptif</td>
+                            <td class="p-3">Penentuan target pasar & proposisi nilai unik</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-800">Kompromi (Trade-offs)</td>
+                            <td class="p-3">Bertahan blok rendah vs menyerang total</td>
+                            <td class="p-3">Strategi biaya rendah vs diferensiasi eksklusif</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-800">Kohesi Aktivitas (Fit)</td>
+                            <td class="p-3">Sinkronisasi pelatih, staf medis & pemandu bakat</td>
+                            <td class="p-3">Penyelarasan rantai pasok, pemasaran & operasional</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-800">Manajemen Kapasitas</td>
+                            <td class="p-3">Rotasi skuad & pengaturan intensitas latihan</td>
+                            <td class="p-3">Pemerataan beban proyek & pencegahan burnout staf</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 2: Guardiola, Integrated Systems & Emotional Intelligence -->
+        <section id="guardiola" class="scroll-mt-20">
+            <div class="border-l-4 border-emerald-500 pl-4 mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">2. Kepemimpinan Pep Guardiola: Sistem Terpadu & Higiene Budaya</h2>
+                <p class="text-slate-600 text-sm md:text-base mt-1">Penolakan Paradigma Galácticos, Juego de Posición, dan Eksekusi Aturan 6 Detik</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 mb-8">
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Saat mengambil alih Barcelona pada tahun 2008, Pep Guardiola membuat keputusan radikal dengan melepas bintang-bintang besar berbudaya destruktif (seperti Ronaldinho dan Deco). Guardiola membuktikan bahwa merusak semangat kelompok tidak boleh ditoleransi hanya demi bakat individual. Ia merancang *Juego de Posición*—sistem terstruktur ketat berbasis SOP operasional—di mana salah satu indikator kinerja utama (KPI) paling terkenal adalah merebut kembali bola dalam kurun waktu 6 detik.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <!-- Chart Container Horizontal Bar -->
+                    <div class="lg:col-span-7 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h3 class="text-sm font-bold text-slate-800 mb-2 text-center">Transformasi SLA Pemulihan Masalah: Tipe Konvensional vs Standar "6 Detik" Guardiola</h3>
+                        <div class="chart-container">
+                            <canvas id="slaChart"></canvas>
+                        </div>
+                        <p class="text-xs text-slate-500 text-center mt-2">
+                            Penerapan mentalitas pemulihan instan mengubah penanganan keluhan pelanggan dari skala hari menjadi hitungan jam.
+                        </p>
+                    </div>
+
+                    <!-- 3 Pillars Cards -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+                            <h3 class="font-bold text-emerald-900 text-sm mb-1 flex items-center space-x-2">
+                                <span>🧹</span>
+                                <span>Higiene Budaya Over Bintang</span>
+                            </h3>
+                            <p class="text-xs text-emerald-800 leading-relaxed">
+                                Menyingkirkan top-performer beracun adalah prasyarat keberhasilan jangka panjang. Promosi internal talenta yang patuh pada sistem lebih bernilai daripada membeli nama besar eksternal.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-cyan-50 border border-cyan-200">
+                            <h3 class="font-bold text-cyan-900 text-sm mb-1 flex items-center space-x-2">
+                                <span>⚙️</span>
+                                <span>SOP Juego de Posición</span>
+                            </h3>
+                            <p class="text-xs text-cyan-800 leading-relaxed">
+                                Membagi area kerja ke dalam zona spesifik. Tim pemasaran, penjualan, keuangan, dan operasional bergerak harmonis tanpa tergantung pada kejeniusan individu sesaat.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-100 border border-slate-300">
+                            <h3 class="font-bold text-slate-900 text-sm mb-1 flex items-center space-x-2">
+                                <span>🧠</span>
+                                <span>Empati & Kecerdasan Emosional</span>
+                            </h3>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                "Saya berurusan dengan manusia, bukan pesepakbola." Memahami latar belakang individual dan melibatkan tim dalam rapat taktis menciptakan kepemilikan komunal atas tujuan bersama.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Organizational Agility in VUCA & Gegenpressing -->
+        <section id="gegenpressing" class="scroll-mt-20">
+            <div class="border-l-4 border-amber-500 pl-4 mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">3. Agilitas Organisasi Era VUCA: Pelajaran dari Gegenpressing</h2>
+                <p class="text-slate-600 text-sm md:text-base mt-1">Respon Transisi Instan Ralf Rangnick/Jürgen Klopp & Eksekusi Sprint Agile</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 mb-8">
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Dunia bisnis VUCA penuh ketidakpastian. Filosofi *Gegenpressing* bertumpu pada hipotesis bahwa lawan paling rentan pada sepersekian detik setelah mereka merebut bola, karena formasi mereka sedang merenggang. Daripada mundur bertahan, tim *Gegenpressing* langsung menekan secara agresif. Dalam bisnis *Agile*, ketika terjadi disrupsi pasar (kehilangan bola), korporati tidak membentuk komite lambat, melainkan melakukan pemicuan respons instan melalui tim lintas fungsi (*cross-functional*).
+                </p>
+
+                <!-- Process Flow Diagram (NO SVG / NO MERMAID) -->
+                <div class="bg-slate-900 text-white p-6 rounded-2xl mb-8">
+                    <h3 class="text-center font-bold text-cyan-400 text-base md:text-lg mb-6">Alur Transisi Respon: Gegenpressing Sepak Bola vs Strategi Bisnis Agile</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+                        <!-- Step 1 -->
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-center relative">
+                            <div class="w-8 h-8 bg-amber-500 text-slate-900 font-extrabold rounded-full flex items-center justify-center mx-auto mb-2 text-sm">1</div>
+                            <h4 class="font-bold text-xs uppercase text-amber-400 mb-1">Momen Disrupsi</h4>
+                            <p class="text-xs text-slate-300">Sepak Bola: Kehilangan Penguasaan Bola<br><span class="text-cyan-400 font-semibold">Bisnis: Disrupsi Pasar / Produk Pesaing</span></p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-center relative">
+                            <div class="w-8 h-8 bg-amber-500 text-slate-900 font-extrabold rounded-full flex items-center justify-center mx-auto mb-2 text-sm">2</div>
+                            <h4 class="font-bold text-xs uppercase text-amber-400 mb-1">Tekanan Balik Instan</h4>
+                            <p class="text-xs text-slate-300">Sepak Bola: High Pressing 6 Detik<br><span class="text-cyan-400 font-semibold">Bisnis: Reaksi Tim Lintas Fungsi (~7 orang)</span></p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-center relative">
+                            <div class="w-8 h-8 bg-amber-500 text-slate-900 font-extrabold rounded-full flex items-center justify-center mx-auto mb-2 text-sm">3</div>
+                            <h4 class="font-bold text-xs uppercase text-amber-400 mb-1">Eksploitasi Celah</h4>
+                            <p class="text-xs text-slate-300">Sepak Bola: Umpan Vertikal Cepat<br><span class="text-cyan-400 font-semibold">Bisnis: MVS (Minimum Viable Strategy) & Sprint</span></p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-center relative">
+                            <div class="w-8 h-8 bg-amber-500 text-slate-900 font-extrabold rounded-full flex items-center justify-center mx-auto mb-2 text-sm">4</div>
+                            <h4 class="font-bold text-xs uppercase text-amber-400 mb-1">Monetisasi Nilai</h4>
+                            <p class="text-xs text-slate-300">Sepak Bola: Mencetak Gol Langsung<br><span class="text-cyan-400 font-semibold">Bisnis: Monetisasi Concept-to-Cash</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Radar Chart Comparison -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h3 class="text-sm font-bold text-slate-800 mb-2 text-center">Matriks Perbandingan 4 Pilar Strategi Taktis vs Bisnis</h3>
+                        <div class="chart-container">
+                            <canvas id="radarChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 space-y-3 text-xs text-slate-600">
+                        <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm">
+                            <span class="font-bold text-slate-800 block mb-1">⚡ Cost of Delay & Kecepatan</span>
+                            Inisiatif bisnis dengan durasi paling pendek atau kerugian penundaan tertinggi harus dieksekusi terlebih dahulu demi memaksimalkan return on investment.
+                        </div>
+                        <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm">
+                            <span class="font-bold text-slate-800 block mb-1">🎯 OKR & Evaluasi Siklus Pendek</span>
+                            Peninjauan indikator secara berkala memungkinkan pivot strategis instan tanpa menunggu revisi rencana lima tahunan yang kaku.
+                        </div>
+                        <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm">
+                            <span class="font-bold text-slate-800 block mb-1">🛡️ Kebijakan Toleransi Nol</span>
+                            Menghilangkan toxic workplace dan harassment sejalan dengan aturan ketat perlindungan akademi usia dini dari intimidasi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Sir Alex Ferguson - Change Management & Observation -->
+        <section id="ferguson" class="scroll-mt-20">
+            <div class="border-l-4 border-crimson-500 pl-4 mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">4. Dinasti & Manajemen Perubahan: Formula Sir Alex Ferguson</h2>
+                <p class="text-slate-600 text-sm md:text-base mt-1">Studi Harvard Business School: Daur Ulang Skuad, Risiko Konsekutif, dan 'Power of Observation'</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 mb-8">
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Banyak korporasi dominan runtuh akibat *success inertia*—enggan mengubah formula sukses saat sedang meraih laba. Sir Alex Ferguson di Manchester United selalu membangun tim berdasarkan proyeksi empat tahun ke depan. Ia berani melepas pemain veteran sebelum performa mereka anjlok, persis seperti CEO yang berani mengkanibal lini produk utama yang masih menguntungkan demi meluncurkan teknologi baru.
+                </p>
+
+                <!-- Ferguson's 8 Principles Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <div class="text-xl mb-2">🌱</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Bangun Fondasi Awal</h3>
+                        <p class="text-xs text-slate-600">Fokus awal pada sistem akademi pemuda daripada sekadar membeli pemain mahal berjangka pendek.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <div class="text-xl mb-2">🔄</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Daur Ulang Tim Siklikal</h3>
+                        <p class="text-xs text-slate-600">Secara proaktif memutus ketergantungan pada bintang tua untuk menyuntikkan energi baru.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <div class="text-xl mb-2">🎲</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Keberanian Mengambil Risiko</h3>
+                        <p class="text-xs text-slate-600">Saat tertinggal di 15 menit akhir, tambah penyerang. Bermain menyerang penuh lebih baik daripada kalah aman.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <div class="text-xl mb-2">👁️</div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Power of Observation</h3>
+                        <p class="text-xs text-slate-600">Mendatangkan asisten untuk menangani latihan harian agar Ferguson bisa mengamati dinamika halus tim.</p>
+                    </div>
+                </div>
+
+                <!-- Strategic Youth Pipeline Chart -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <h3 class="text-sm font-bold text-slate-800 mb-2 text-center">Transisi Tahapan Akademik & Pembelajaran Bertahap (Stepping Stones)</h3>
+                    <div class="chart-container">
+                        <canvas id="youthPipelineChart"></canvas>
+                    </div>
+                    <p class="text-xs text-slate-500 text-center mt-2">
+                        Pembelajaran bertahap dari format kecil (3v3) hingga lapangan penuh (11v11) memastikan kapasitas perkembangan kognitif karyawan junior berkembang secara terstruktur tanpa kelelahan dini.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Red Bull Multi-Club Model & Data-Driven Pipeline -->
+        <section id="redbull" class="scroll-mt-20">
+            <div class="border-l-4 border-navy-800 pl-4 mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900">5. Industrialisasi Taktis: Ekosistem Multi-Klub Red Bull</h2>
+                <p class="text-slate-600 text-sm md:text-base mt-1">Integrasi Vertikal Rantai Pasok Talenta Global dan Rekrutmen Prediktif Berbasis Data</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 mb-8">
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Red Bull merancang ekosistem jaringan multi-klub (FC Liefering → RB Salzburg → RB Leipzig + NY/Bragantino) sebagai bentuk integrasi vertikal rantai pasok global. Mereka tidak membeli pemain jadi berharga mahal, melainkan berburu di pasar primer (*first-mover advantage* di Afrika Barat, Skandinavia, Amerika Selatan) menggunakan indikator data preskriptif (kekuatan ledakan, daya tahan, kepatuhan taktis).
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <!-- ROI Growth Chart -->
+                    <div class="lg:col-span-7 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <h3 class="text-sm font-bold text-slate-800 mb-2 text-center">Perbandingan Multiplikasi Valuasi: Model Ekosistem Red Bull vs Pembelian Konvensional</h3>
+                        <div class="chart-container">
+                            <canvas id="roiChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Explanation Cards -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="p-4 bg-slate-900 text-white rounded-xl shadow-sm">
+                            <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">🔗 Integrasi Vertikal Mandiri</span>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Jaringan inkubasi bertahap memastikan tidak ada gangguan rantai pasok talenta. Sebelum eksekutif atau pemain kunci pergi, penerusnya telah disimulasikan bertahun-tahun dalam sistem.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-900 text-white rounded-xl shadow-sm">
+                            <span class="text-xs text-emerald-400 font-bold uppercase tracking-wider block mb-1">📊 Fit Sistem Berbasis Data AI</span>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Rekrutmen tidak didasarkan pada kualifikasi akademis normatif atau status kebintangan, melainkan pada data objektif kesesuaian sistem operasional perusahaan.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-900 text-white rounded-xl shadow-sm">
+                            <span class="text-xs text-cyan-400 font-bold uppercase tracking-wider block mb-1">♻️ Reinvestasi Margin Laba</span>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Keuntungan masif dari komersialisasi talenta hasil pembinaan diputar kembali untuk mempercanggih fasilitas analitik kecerdasan buatan (AI) dan fasilitas fisik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Interactive Dashboard Synthesis Matrix -->
+        <section id="dashboard" class="scroll-mt-20">
+            <div class="bg-gradient-to-br from-navy-900 via-slate-900 to-navy-800 rounded-3xl p-6 md:p-10 text-white shadow-xl">
+                <div class="max-w-3xl mb-8">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Matriks Sintesis Executif: Pilih Lensa Strategi Anda</h2>
+                    <p class="text-slate-300 text-sm md:text-base">
+                        Klik pada salah satu pilar di bawah untuk mengeksplorasi rekomendasi eksekusi aksi korporat terkait.
+                    </p>
+                </div>
+
+                <!-- Interactive Tabs -->
+                <div class="flex flex-wrap gap-2 mb-6" id="matrixTabs">
+                    <button onclick="switchTab('pep')" id="tab-pep" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-cyan-500 text-slate-900 shadow">
+                        Pep Guardiola (Sistem & Budaya)
+                    </button>
+                    <button onclick="switchTab('klopp')" id="tab-klopp" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">
+                        Gegenpressing (Agilitas VUCA)
+                    </button>
+                    <button onclick="switchTab('fergie')" id="tab-fergie" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">
+                        Sir Alex (Suksesi & Risiko)
+                    </button>
+                    <button onclick="switchTab('redbull')" id="tab-redbull" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">
+                        Red Bull (Rantai Pasok Data)
+                    </button>
+                </div>
+
+                <!-- Dynamic Content Box -->
+                <div id="tabContent" class="bg-slate-800/90 border border-slate-700 p-6 rounded-2xl">
+                    <!-- Default Pep Content -->
+                    <div id="content-pep" class="space-y-4">
+                        <div class="flex items-center space-x-3 text-cyan-400 font-bold text-lg">
+                            <span>🏆</span>
+                            <h3>Fokus Lensa Pep Guardiola: Supremasi SOP & Higiene Lingkungan Kerja</h3>
+                        </div>
+                        <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                            Rekomendasi Utama: Lakukan audit budaya secara menyeluruh. Singkirkan individu beracun (*toxic top-performers*) yang merusak kohesi tim. Bangun SOP berbasis *Juego de Posición* sehingga operasional bisnis berjalan independen dari figur spesifik.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs pt-2">
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-cyan-400 block mb-1">Indikator Kinerja Utama</span>
+                                SLA Respon CS & Incident Recovery &lt; 6 Jam.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-cyan-400 block mb-1">Gaya Kepemimpinan</span>
+                                Demokratis-Empatis berbasis Kecerdasan Emosional.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-cyan-400 block mb-1">Mitigasi Risiko</span>
+                                Meminimalkan ketergantungan pada talent eksternal mahal.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content-klopp" class="space-y-4 hidden">
+                        <div class="flex items-center space-x-3 text-amber-400 font-bold text-lg">
+                            <span>⚡</span>
+                            <h3>Fokus Lensa Gegenpressing: Respon Transisi Disrupsi Seketika</h3>
+                        </div>
+                        <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                            Rekomendasi Utama: Ketika pesaing merilis produk disrupsi atau pasar bergejolak, gunakan insting *Gegenpressing*. Bentuk tim lintas fungsi beranggotakan ~7 orang untuk merilis *Minimum Viable Strategy* (MVS) melalui sprint berulang.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs pt-2">
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-amber-400 block mb-1">Indikator Kinerja Utama</span>
+                                Kecepatan Alur *Concept-to-Cash*.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-amber-400 block mb-1">Gaya Kepemimpinan</span>
+                                High-Energy & Otonomi Lintas Fungsi.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-amber-400 block mb-1">Mitigasi Risiko</span>
+                                Meminimalkan *Cost of Delay* penundaan keputusan.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content-fergie" class="space-y-4 hidden">
+                        <div class="flex items-center space-x-3 text-crimson-400 font-bold text-lg">
+                            <span>👑</span>
+                            <h3>Fokus Lensa Sir Alex Ferguson: Pembangunan Dinasti & Suksesi</h3>
+                        </div>
+                        <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                            Rekomendasi Utama: Tinjau portofolio produk dan skuad eksekutif dengan horizon 4 tahun. Jangan ragu mengkanibal produk lama yang masih untung demi investasi teknologi masa depan. Gunakan *Power of Observation* dengan mundur dari micro-management.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs pt-2">
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-crimson-400 block mb-1">Indikator Kinerja Utama</span>
+                                Rasio Retensi Talenta Hasil Pembinaan Internal.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-crimson-400 block mb-1">Gaya Kepemimpinan</span>
+                                Otoritatif Berwibawa & Observatif.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-crimson-400 block mb-1">Mitigasi Risiko</span>
+                                Menghindari kemandekan akibat *Success Inertia*.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content-redbull" class="space-y-4 hidden">
+                        <div class="flex items-center space-x-3 text-emerald-400 font-bold text-lg">
+                            <span>🧬</span>
+                            <h3>Fokus Lensa Ekosistem Red Bull: Industrialisasi Talenta & AI</h3>
+                        </div>
+                        <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                            Rekomendasi Utama: Bangun perpipaan talenta (*talent pipeline*) secara terintegrasi vertikal. Manfaatkan kecerdasan buatan (AI) dan matriks data preskriptif untuk menemukan bakat berpotensi tinggi sebelum terdeteksi pesaing pasar utama.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs pt-2">
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-emerald-400 block mb-1">Indikator Kinerja Utama</span>
+                                ROI Valuasi & Multiplikasi Margin Aset.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-emerald-400 block mb-1">Gaya Kepemimpinan</span>
+                                Terpusat Institusional & Terukur Data.
+                            </div>
+                            <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-700">
+                                <span class="font-bold text-emerald-400 block mb-1">Mitigasi Risiko</span>
+                                Mencegah Inflasi Biaya Akuisisi Pihak Ketiga.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion & Executive Summary -->
+        <section class="bg-white rounded-2xl border border-slate-200/80 p-6 md:p-8">
+            <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-4">Kesimpulan: Ekstraksi Paradigma Menuju Eksekusi Korporat</h2>
+            <p class="text-slate-700 leading-relaxed text-sm md:text-base mb-6">
+                Korelasi antara strategi evolusioner sepak bola dan manajemen korporat modern terbukti melampaui analogi dangkal. Tekanan kompetisi tinggi dalam olahraga memantik metode kelangsungan hidup yang sangat efisien. Pemimpin bisnis masa depan adalah orchestrator yang mampu menyatukan struktur ketat *Juego de Posición*, kelincahan *Gegenpressing*, keberanian suksesi Sir Alex Ferguson, dan presisi data Red Bull tanpa mengorbankan pengelolaan kapasitas psikologis manusia.
+            </p>
+            <div class="flex flex-wrap gap-4 items-center justify-between pt-4 border-t border-slate-100 text-xs text-slate-500">
+                <span>Dibuat berdasarkan Sintesis Riset Strategi Manajemen & Taktik Sepak Bola Elit</span>
+                <span>Single Page Application Infografis • Tanpa Dependensi SVG</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-400 text-center py-8 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 Dashboard Infografis Sepak Bola dan Strategi Bisnis. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic & Chart Configurations -->
+    <script>
+        // Label wrapping utility requirement for labels > 16 chars
+        function wrapLabel(str, maxLen = 16) {
+            if (typeof str !== 'string') return str;
+            if (str.length <= maxLen) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxLen) {
+                    if (currentLine) lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            if (currentLine) lines.push(currentLine.trim());
+            return lines;
+        }
+
+        // Shared Tooltip Configuration required for multi-line labels
+        const commonTooltipOptions = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // Initialize Charts when DOM Ready
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Chart 1: Capacity Management (Line / Area)
+            const ctxCapacity = document.getElementById('capacityChart').getContext('2d');
+            const capacityLabels = [
+                'Senin (Elektif Menumpuk)', 
+                'Selasa (Sesi Tinggi)', 
+                'Rabu (Puncak Laga)', 
+                'Kamis (Pemulihan)', 
+                'Jumat (Persiapan)', 
+                'Sabtu (Laga Utama)'
+            ].map(l => wrapLabel(l, 16));
+
+            new Chart(ctxCapacity, {
+                type: 'line',
+                data: {
+                    labels: capacityLabels,
+                    datasets: [
+                        {
+                            label: 'Tanpa Rotasi Terencana (Risiko Burnout)',
+                            data: [95, 88, 98, 92, 85, 99],
+                            borderColor: '#ef4444',
+                            backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Rotasi Terencana (Kapasitas Stabil)',
+                            data: [65, 70, 75, 68, 60, 80],
+                            borderColor: '#10b981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.15)',
+                            fill: true,
+                            tension: 0.3,
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: commonTooltipOptions,
+                        legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } }
+                    },
+                    scales: {
+                        y: {
+                            min: 40,
+                            max: 100,
+                            title: { display: true, text: 'Tingkat Beban Kapasitas (%)', font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+
+            // Chart 2: SLA Response Bar Chart (Horizontal)
+            const ctxSla = document.getElementById('slaChart').getContext('2d');
+            const slaLabels = [
+                'Pemulihan Keluhan Pelanggan', 
+                'Penanganan Disrupsi Produk', 
+                'Pivot Strategi Pemasaran', 
+                'Resolusi Isu SDM Internal'
+            ].map(l => wrapLabel(l, 16));
+
+            new Chart(ctxSla, {
+                type: 'bar',
+                data: {
+                    labels: slaLabels,
+                    datasets: [
+                        {
+                            label: 'SLA Tradisional (Hari)',
+                            data: [5, 14, 30, 7],
+                            backgroundColor: '#94a3b8'
+                        },
+                        {
+                            label: 'SLA Mentalitas "6 Detik" (Jam)',
+                            data: [1, 4, 12, 2],
+                            backgroundColor: '#06b6d4'
+                        }
+                    ]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: commonTooltipOptions,
+                        legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } }
+                    },
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'Waktu Wujud (Jam vs Hari)', font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+
+            // Chart 3: Radar Chart - 4 Pillars Comparison
+            const ctxRadar = document.getElementById('radarChart').getContext('2d');
+            const radarLabels = [
+                'Agilitas & Respon', 
+                'Kontrol Sistem SOP', 
+                'Visi Perencanaan 4-Thn', 
+                'Efisiensi Data Pipeline', 
+                'Higiene Budaya Tim'
+            ].map(l => wrapLabel(l, 16));
+
+            new Chart(ctxRadar, {
+                type: 'radar',
+                data: {
+                    labels: radarLabels,
+                    datasets: [
+                        {
+                            label: 'Pep Guardiola (Juego de Posición)',
+                            data: [75, 98, 85, 80, 95],
+                            borderColor: '#06b6d4',
+                            backgroundColor: 'rgba(6, 182, 212, 0.2)'
+                        },
+                        {
+                            label: 'Jürgen Klopp (Gegenpressing)',
+                            data: [98, 80, 70, 75, 90],
+                            borderColor: '#f59e0b',
+                            backgroundColor: 'rgba(245, 158, 11, 0.2)'
+                        },
+                        {
+                            label: 'Sir Alex Ferguson (Dinasti)',
+                            data: [70, 85, 98, 65, 92],
+                            borderColor: '#ef4444',
+                            backgroundColor: 'rgba(239, 68, 68, 0.2)'
+                        },
+                        {
+                            label: 'Red Bull (Multi-Club Data)',
+                            data: [85, 90, 90, 99, 80],
+                            borderColor: '#10b981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.2)'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: commonTooltipOptions,
+                        legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } }
+                    },
+                    scales: {
+                        r: {
+                            angleLines: { color: '#e2e8f0' },
+                            suggestedMin: 50,
+                            suggestedMax: 100
+                        }
+                    }
+                }
+            });
+
+            // Chart 4: Youth Pipeline Format Growth (Bar)
+            const ctxYouth = document.getElementById('youthPipelineChart').getContext('2d');
+            const youthLabels = [
+                'Format 3v3 (Pemula)', 
+                'Format 7v7 (Pengembangan)', 
+                'Format 9v9 (Transisi)', 
+                'Format 11v11 (Profil Utuh)'
+            ].map(l => wrapLabel(l, 16));
+
+            new Chart(ctxYouth, {
+                type: 'bar',
+                data: {
+                    labels: youthLabels,
+                    datasets: [{
+                        label: 'Tingkat Sentuhan Bola & Kepemilikan Keputusan',
+                        data: [95, 78, 60, 45],
+                        backgroundColor: ['#38bdf8', '#818cf8', '#a78bfa', '#c084fc']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: commonTooltipOptions,
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            title: { display: true, text: 'Indeks Sentuhan per Menit', font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+
+            // Chart 5: Red Bull Multi-Club ROI Valuation
+            const ctxRoi = document.getElementById('roiChart').getContext('2d');
+            const roiLabels = [
+                'Tahun 1 (Pemanduan & Akuisisi)', 
+                'Tahun 2 (FC Liefering / Inkubasi)', 
+                'Tahun 3 (RB Salzburg / UCL Level)', 
+                'Tahun 4 (RB Leipzig / Ekspor Utuh)'
+            ].map(l => wrapLabel(l, 16));
+
+            new Chart(ctxRoi, {
+                type: 'line',
+                data: {
+                    labels: roiLabels,
+                    datasets: [
+                        {
+                            label: 'Valuasi Model Red Bull Multi-Club (€M)',
+                            data: [2, 8, 25, 75],
+                            borderColor: '#10b981',
+                            backgroundColor: '#10b981',
+                            borderWidth: 3,
+                            tension: 0.2
+                        },
+                        {
+                            label: 'Model Pembelian Bintang Konvensional (€M)',
+                            data: [60, 58, 52, 40],
+                            borderColor: '#ef4444',
+                            backgroundColor: '#ef4444',
+                            borderDash: [5, 5],
+                            borderWidth: 2,
+                            tension: 0.2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: commonTooltipOptions,
+                        legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } }
+                    },
+                    scales: {
+                        y: {
+                            title: { display: true, text: 'Valuasi Aset Pasaran (€ Juta)', font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+
+        });
+
+        // Tab Switching Logic
+        function switchTab(tabKey) {
+            const tabs = ['pep', 'klopp', 'fergie', 'redbull'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`tab-${t}`);
+                const content = document.getElementById(`content-${t}`);
+                
+                if (t === tabKey) {
+                    btn.className = "px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-cyan-500 text-slate-900 shadow";
+                    content.classList.remove('hidden');
+                } else {
+                    btn.className = "px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-slate-800 text-slate-300 hover:bg-slate-700";
+                    content.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
